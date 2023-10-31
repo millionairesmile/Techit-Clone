@@ -94,7 +94,7 @@ button {
 
 ul {
   list-style: none;
-  padding: 0;
+  padding: 0px;
 }
 
 header {
@@ -188,7 +188,15 @@ header {
   font-weight: 600;
 }
 
-.techit-school-container > ul > li {
+.techit-school-container > .techit-school {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 32px;
+  justify-items: center;
+  margin-top: 40px;
+}
+
+.techit-school-container > .techit-school > li {
   width: 290px;
   height: 416px;
 }
@@ -211,7 +219,7 @@ header {
   transform: scale(1.1);
 }
 
-.techit-school-container > ul > li > span {
+.techit-school-container > .techit-school > li > span {
   font-size: 14px;
   font-weight: 600;
   padding: 4px 8px;
@@ -233,21 +241,13 @@ header {
   border: 1px solid #3f3f46;
 }
 
-.techit-school-container > ul {
-  display: grid;
-  grid-template-columns: repeat(4, 1fr);
-  gap: 32px;
-  justify-items: center;
-  margin-top: 40px;
-}
-
-.techit-school-container > ul > li > h3 {
+.techit-school-container > .techit-school > li > h3 {
   font-size: 20px;
   font-weight: 600;
   margin: 16px 0 8px 0;
 }
 
-.techit-school-container > ul > li > h5 {
+.techit-school-container > .techit-school > li > h5 {
   font-size: 18px;
 }
 
@@ -288,4 +288,28 @@ header {
   margin-top: 20px;
   font-size: 14px;
   color: #737373;
+}
+
+.onboarding > li {
+  width: 398px;
+  height: 317px;
+  background-color: pink;
+}
+
+.onboarding > li > .img-container {
+  margin-bottom: 16px;
+  overflow: hidden;
+  border-radius: 12px;
+  width: 398px;
+  height: 198px;
+}
+
+.onboarding > li > .img-container > img {
+  width: 398px;
+  height: 198px;
+  transition: all 0.5s;
+}
+
+.onboarding > li > .img-container > img:hover {
+  transform: scale(1.1);
 }

@@ -293,7 +293,6 @@ header {
 .onboarding > li {
   width: 398px;
   height: 317px;
-  background-color: pink;
 }
 
 .onboarding > li > .img-container {
@@ -312,4 +311,39 @@ header {
 
 .onboarding > li > .img-container > img:hover {
   transform: scale(1.1);
+}
+
+.onboarding > li > h5 {
+  font-size: 14px;
+}
+
+.onboarding > li > h3 {
+  font-size: 20px;
+  font-weight: 600;
+  margin-top: 6px;
+}
+
+.onboarding > li > .price > span {
+  margin-left: 4px;
+  font-size: 14px;
+  color: #a3a3a3;
+  font-weight: 400;
+  text-decoration: line-through;
+}
+
+.onboarding > li > span {
+  color: #e67800;
+  background-color: #ffedd5;
+  padding: 2px 6px;
+  font-size: 14px;
+  font-weight: 600;
+  border-radius: 4px;
+}
+
+.onboarding {
+  margin-top: 40px;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 60px 40px;
+  justify-items: center;
 }
